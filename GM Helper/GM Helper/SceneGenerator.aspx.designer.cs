@@ -24,39 +24,30 @@ namespace GM_Helper
         protected global::System.Web.UI.WebControls.Label TimeOfDayLabel;
 
         /// <summary>
-        /// MorningCB control.
+        /// DropDownList2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox MorningCB;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
 
         /// <summary>
-        /// AfternoonCB control.
+        /// LocationLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox AfternoonCB;
+        protected global::System.Web.UI.WebControls.Label LocationLabel;
 
         /// <summary>
-        /// EveningCB control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox EveningCB;
-
-        /// <summary>
-        /// NightCB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox NightCB;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
     }
 }

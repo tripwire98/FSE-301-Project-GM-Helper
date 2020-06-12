@@ -7,29 +7,16 @@ namespace GM_Helper.Code_Folder
 {
     public class TimeOfDay
     {
-        string Morning = "Morning";
-        string Afternoon = "Afternoon";
-        string Evening = "Evening";
-        string Night = "Night";
+        //Default time of day
         string TheTimeOfDay = "Afternoon";
 
-        public void SetTimeToMorning()
+        //setter methods that set Time of day to selected option
+        public void SetTimeOfDay(string SelectedTime)
         {
-            TheTimeOfDay = Morning;
-        }
-        public void SetTimeToAfternoon()
-        {
-            TheTimeOfDay = Afternoon;
-        }
-        public void SetTimeToEvening()
-        {
-            TheTimeOfDay = Evening;
-        }
-        public void SetTimeToNight()
-        {
-            TheTimeOfDay = Night;
+            TheTimeOfDay = SelectedTime;
         }
 
+        //getter method
         public string GetTimeOfDay()
         {
             return TheTimeOfDay;
