@@ -162,6 +162,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Code Folder\Location.cs" />
+    <Compile Include="Code Folder\PersonCreator.cs" />
     <Compile Include="SceneGenerator.aspx.cs">
       <DependentUpon>SceneGenerator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
