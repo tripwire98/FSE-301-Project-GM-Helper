@@ -24,20 +24,25 @@ namespace GM_Helper.Code_Folder
             return description;
         }
 
-        public void SetLocation(Location loc)
+        public void SetLocation(Location locationInput)
         {
-            location = loc;
+            location = locationInput;
         }
 
-        public void SetTime(TimeOfDay t)
+        public void SetTime(TimeOfDay timeInput)
         {
-            time = t;
+            time = timeInput;
         }
 
 
-        public void SetNumberOfPeople(int n)
+        public void SetNumberOfPeople(int numberOfPeopleInput)
         {
-            numberOfPeople = n;
+            numberOfPeople = numberOfPeopleInput;
+        }
+
+        public void SetPeriodDescription(String periodDescriptionInput)
+        {
+            periodDescription = periodDescriptionInput;
         }
 
     }
