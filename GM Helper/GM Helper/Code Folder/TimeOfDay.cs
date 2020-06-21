@@ -8,7 +8,7 @@ namespace GM_Helper.Code_Folder
     public class TimeOfDay
     {
         //Default time of day
-        string TheTimeOfDay = "Afternoon";
+        string TheTimeOfDay; //= "Afternoon";
 
         //setter methods that set Time of day to selected option
         public void SetTimeOfDay(string SelectedTime)

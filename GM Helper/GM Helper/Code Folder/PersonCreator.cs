@@ -8,8 +8,10 @@ namespace GM_Helper.Code_Folder
 {
     public class PersonCreator
     {
-        public string CreatedPerson;
+        public string PersonsName;
         int raceNum;
+        int age;
+        Random rand = new Random();
         string[,] fNames = new string[,]
         {
             /* Human First Names*/ {"John","Carl","Steve"},
@@ -32,16 +34,21 @@ namespace GM_Helper.Code_Folder
                 raceNum = 1;
             }
 
-            var rand = new Random();
-
+            
             int fIndex = rand.Next(fNames.Length/2);
             int lIndex = rand.Next(lNames.Length/2);
 
-            CreatedPerson = (fNames[raceNum, fIndex] + " " + lNames[raceNum, lIndex]);
+            PersonsName = (fNames[raceNum, fIndex] + " " + lNames[raceNum, lIndex]);
         }
-        public string getPerson()
+        public string getPersonsName()
         {
-            return CreatedPerson;
+            System.Diagnostics.Debug.WriteLine(PersonsName);
+            return PersonsName;
+        }
+        public string getPersonsAge()
+        {
+            rand.Next(10, 90);
+            return age.ToString();
         }
     }
 }

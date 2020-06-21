@@ -11,9 +11,11 @@ namespace GM_Helper
     public partial class SceneGenerator : Page
     {
         //Objects used for The time of day and location
-        public TimeOfDay TimeOfDayGetter = new TimeOfDay();
-        public Location location = new Location();
-        public PersonCreator pCreator = new PersonCreator();
+        //public TimeOfDay TimeOfDayGetter = new TimeOfDay();
+        //public Location location = new Location();
+        //public PersonCreator pCreator = new PersonCreator();
+        public SceneGeneration sGenerator = new SceneGeneration();
+        //public AdjectiveController adjCon = new AdjectiveController();
 
         //What happens when the page loads
         protected void Page_Load(object sender, EventArgs e)
@@ -27,8 +29,8 @@ namespace GM_Helper
             //set and get the correct loaction value
             //System.Diagnostics.Debug.WriteLine(location.getLocation()) is used to display result in console for debug purposes
             string loc = DropDownList1.SelectedItem.Text;
-            location.setLocation(loc);
-            System.Diagnostics.Debug.WriteLine(location.getLocation());
+            sGenerator.location.setLocation(loc);
+            System.Diagnostics.Debug.WriteLine(sGenerator.location.getLocation());
         }
 
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
@@ -37,15 +39,21 @@ namespace GM_Helper
             //set and get the correct Time Of Day value
             //System.Diagnostics.Debug.WriteLine(TimeOfDayGetter.GetTimeOfDay()) is used to display result in console for debug purposes
             string Time = DropDownList2.SelectedItem.Text;
-            TimeOfDayGetter.SetTimeOfDay(Time);
-            System.Diagnostics.Debug.WriteLine(TimeOfDayGetter.GetTimeOfDay());
+            sGenerator.TimeOfDayGetter.SetTimeOfDay(Time);
+            System.Diagnostics.Debug.WriteLine(sGenerator.TimeOfDayGetter.GetTimeOfDay());
         }
 
         protected void DropDownList3_SelectedIndexChanged(object sender, EventArgs e)
         {
             string person = DropDownList3.SelectedItem.Text;
-            pCreator.createPerson(person);
-            System.Diagnostics.Debug.WriteLine(pCreator.getPerson());
+            sGenerator.pCreator.createPerson(person);
+            System.Diagnostics.Debug.WriteLine(sGenerator.pCreator.getPersonsName());
+        }
+
+        protected void GenerateSceneBtn_Click(object sender, EventArgs e)
+        {
+            //sGenerator.generateScene();
+            SceneLbl.Text = sGenerator.generateScene();
         }
     }
 }
