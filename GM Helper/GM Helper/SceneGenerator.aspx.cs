@@ -43,10 +43,13 @@ namespace GM_Helper
 
         protected void GenerateSceneBtn_Click(object sender, EventArgs e)
         {
-            if(DropDownList1.SelectedItem.Text == "Random") //if location is unselected
+            Random rnd = new Random();
+            int randomChoice;
+            if (DropDownList1.SelectedItem.Text == "Random") //if location is unselected
             {
-                //tbd rand function to pick through entries hard setting to Afternoon.
-                loc = "Forest";
+                //choose random location
+                randomChoice = rnd.Next(1,DropDownList1.Items.Count);
+                loc = DropDownList1.Items[randomChoice].Text;
             }
             else
             {
@@ -56,8 +59,9 @@ namespace GM_Helper
 
             if (DropDownList2.SelectedItem.Text == "Random") //if time is unselected
             {
-                //tbd rand function to pick through entries hard setting to Afternoon.
-                time = "Afternoon";
+                //choose random time
+                randomChoice = rnd.Next(1, DropDownList2.Items.Count);
+                time = DropDownList2.Items[randomChoice].Text;
             }
             else
             {
@@ -66,7 +70,9 @@ namespace GM_Helper
             }
             if (DropDownList3.SelectedItem.Text == "Random") //if race is unselected
             {
-                personRace = "Random";
+                //choose random race
+                randomChoice = rnd.Next(1, DropDownList3.Items.Count);
+                personRace = DropDownList3.Items[randomChoice].Text;
             }
             else
             {
