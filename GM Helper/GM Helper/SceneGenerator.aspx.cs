@@ -16,6 +16,12 @@ namespace GM_Helper
         public TimeOfDay TimeOfDayGetter = new TimeOfDay();
         public Location location = new Location();
         public PersonCreator pCreator = new PersonCreator();
+=======
+        public SceneGeneration sGenerator;
+        string loc;
+        string time;
+        string personRace;
+>>>>>>> Stashed changes
 
         //What happens when the page loads
         protected void Page_Load(object sender, EventArgs e)
