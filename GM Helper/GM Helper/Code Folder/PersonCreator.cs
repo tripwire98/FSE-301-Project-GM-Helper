@@ -11,12 +11,10 @@ namespace GM_Helper.Code_Folder
     {
         public string CreatedPerson;
         int raceNum;
-<<<<<<< Updated upstream
-=======
         int age;
         String personRace;
+        String PersonsName;
         Random rand = new Random();
->>>>>>> Stashed changes
         string[,] fNames = new string[,]
         {
             /* Human First Names*/ {"John","Carl","Steve"},
@@ -50,14 +48,6 @@ namespace GM_Helper.Code_Folder
 
             int fIndex = rand.Next(fNames.Length/2);
             int lIndex = rand.Next(lNames.Length/2);
-
-<<<<<<< Updated upstream
-            CreatedPerson = (fNames[raceNum, fIndex] + " " + lNames[raceNum, lIndex]);
-        }
-        public string getPerson()
-        {
-            return CreatedPerson;
-=======
             pname = (fNames[raceNum, fIndex] + " " + lNames[raceNum, lIndex]);
             return pname;
         }
@@ -76,7 +66,6 @@ namespace GM_Helper.Code_Folder
         public String getPersonsAge()
         {
             return age.ToString();
->>>>>>> Stashed changes
         }
 
         public String getPersonsRace()
