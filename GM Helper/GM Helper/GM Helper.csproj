@@ -106,7 +106,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SceneGenerator.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -124,6 +123,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -165,6 +165,7 @@
     <Compile Include="Code Folder\Location.cs" />
     <Compile Include="Code Folder\PersonCreator.cs" />
     <Compile Include="Code Folder\SceneGeneration.cs" />
+    <Compile Include="Code Folder\SceneType.cs" />
     <Compile Include="SceneGenerator.aspx.cs">
       <DependentUpon>SceneGenerator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -175,13 +176,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Code Folder\TimeOfDay.cs" />
     <Compile Include="Code Folder\Test.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
