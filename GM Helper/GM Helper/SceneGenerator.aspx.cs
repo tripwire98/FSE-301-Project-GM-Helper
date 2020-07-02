@@ -16,6 +16,7 @@ namespace GM_Helper
         string loc;
         string time;
         string personRace;
+        string sceneType;
 
         //What happens when the page loads
         protected void Page_Load(object sender, EventArgs e)
@@ -39,6 +40,10 @@ namespace GM_Helper
         {
             //update personRace variable to current selection
             personRace = DropDownList3.SelectedItem.Text;
+        }
+        protected void DropDownList4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            sceneType = DropDownList4.SelectedItem.Text;
         }
 
         protected void GenerateSceneBtn_Click(object sender, EventArgs e)
@@ -79,8 +84,21 @@ namespace GM_Helper
                 // use the chosen race in dropdown
                 personRace = DropDownList3.SelectedItem.Text;
             }
-            sGenerator = new SceneGeneration(loc, time, personRace);
+            if (DropDownList4.SelectedItem.Text == "Random") //if SceneType is unselected
+            {
+                //choose random scene type
+                randomChoice = rnd.Next(1, DropDownList4.Items.Count);
+                sceneType = DropDownList4.Items[randomChoice].Text;
+            }
+            else
+            {
+                // use the chosen scene type in dropdown
+                sceneType = DropDownList4.SelectedItem.Text;
+            }
+            sGenerator = new SceneGeneration(loc, time, personRace, sceneType);
             SceneLbl.Text = sGenerator.generateScene();
         }
+
+        
     }
 }

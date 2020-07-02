@@ -8,6 +8,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br />
     <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Label ID="TimeOfDayLabel0" runat="server" Text="Please select a type of Scene"></asp:Label>
+    &nbsp;<asp:DropDownList ID="DropDownList4" runat="server" Height="20px" OnSelectedIndexChanged="DropDownList4_SelectedIndexChanged" Width="131px">
+    <asp:ListItem>Random</asp:ListItem>
+    <asp:ListItem>Combat</asp:ListItem>
+    <asp:ListItem>Exploration</asp:ListItem>
+    <asp:ListItem>Social</asp:ListItem>
+</asp:DropDownList>
     <br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Label ID="TimeOfDayLabel" runat="server" Text="Please select a time of day"></asp:Label>
